@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap')
+
+* {
+    font-family: 'Karla', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9b2226;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.main-container h3 {
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.who {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 800px) {
+    .main-container {
+        max-width: 700px;
+        margin: auto;
+    }
+    
+}
+
+.picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+img {
+    height: 40px;
+}
+
+div > div {
+    border: 2px solid  #0e0e0e;
+    width: 90%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-inline: auto;
+}
+
+div p {
+    font-size: 20px;
+}
+
+.social-buttons {
+    width: 50%;
+    padding: 20px;
+    border:  none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-buttons a img {
+    margin-right: 20px;
+
+}
+
+.social-buttons a img:hover {
+    height: 35px;
+}
+
+.image {
+    width: 10%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+}
+
+.mediumArticles,
+.wordpress,
+.github,
+.atupaStaticLandingPage {
+    cursor: pointer;
+    align-items: center;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.mediumArticles:hover {
+    background-color: #005f73;
+    border-radius: 9px;
+    transition: .5s;
+    padding-block: 3px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.wordpress:hover {
+    background-color: #005f73;
+    border-radius: 9px;
+    transition: .5s;
+    padding-block: 2px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.github:hover {
+    background-color: #005f73;
+    border-radius: 9px;
+    transition: .2s;
+    padding-block: 2px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.atupaStaticLandingPage:hover {
+    background-color: #005f73;
+    border-radius: 9px;
+    transition: .5s;
+    padding-block: 2px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.mediumArticles > * {
+    border: none;    
+}
+
+.wordpress > *  {
+     border: none;
+}
+
+.github > * {
+    border: none;
+}
+
+.atupaStaticLandingPage > * {
+    border: none;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+
+
+
