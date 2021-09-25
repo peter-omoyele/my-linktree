@@ -155,7 +155,7 @@ footer {
 
 /*Hover Styles For Mobile*/
 
-.atupaStaticLandingPageHover {
+.atupaStaticLandingPageHover:hover {
     background-color: #005f73;
     border-radius: 9px;
     transition: .5s;
@@ -164,7 +164,7 @@ footer {
     border-top-left-radius: 15px;
 }
 
-.mediumArticlesHover {
+.mediumArticlesHover:hover {
     background-color: #005f73;
     border-radius: 9px;
     transition: .5s;
@@ -173,7 +173,7 @@ footer {
     border-top-left-radius: 15px;
 }
 
-.wordpressHover {
+.wordpressHover:hover {
     background-color: #005f73;
     border-radius: 9px;
     transition: .5s;
@@ -182,7 +182,7 @@ footer {
     border-top-left-radius: 15px;
 }
 
-.githubHover {
+.githubHover:hover {
     background-color: #005f73;
     border-radius: 9px;
     transition: .5s;
