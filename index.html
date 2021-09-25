@@ -71,7 +71,7 @@
             
         </div>
 
-        <div class="atupaStaticLandingPage" onclick="location.href='https://atupa-light-toggle.vercel.app/';">
+        <div class="atupaStaticLandingPage  atupaStaticLandingPageHover" onclick="location.href='https://atupa-light-toggle.vercel.app/';">
 
             <div class="image">
                 <a href="https://atupa-light-toggle.vercel.app/" target="_blank">
@@ -89,5 +89,18 @@
     <footer>
         <small>ⓒ 2021, Olafimihan</small>
     </footer>
+
+    <script>
+        let atupaStaticLandingPage = document.getElementsByClassName("atupaStaticLandingPage")[0];
+
+        atupaStaticLandingPage.addEventListener("touchstart", function(){
+            atupaStaticLandingPage.classList.add("atupaStaticLandingPageHover")
+        })
+
+        atupaStaticLandingPage.addEventListener("touchend", function(){
+            atupaStaticLandingPage.classList.remove("atupaStaticLandingPageHover")
+        })
+
+    </script>
 </body>
 </html>
