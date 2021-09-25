@@ -15,7 +15,9 @@
             <img class="picture" src="assets/Anomaly-removebg.png" alt="">
             <h3>Olafimihan</h3>
             <p class="subtext">Writer (English, HTML, CSS & JavaScript)</p>
-            <p></p><a class="fancyLink" href="https://drive.google.com/drive/folders/1qwT8f1oS5n5nuI4rvWtYENRHxh4S03FR?usp=sharing" target="_blank">I am a creative content writer.</a></p>
+            <p>
+                <a class="fancyLink fancyLinkHover" href="https://drive.google.com/drive/folders/1qwT8f1oS5n5nuI4rvWtYENRHxh4S03FR?usp=sharing" target="_blank">I am a Creative Content Writer</a>
+            </p>
             <p>Outside of work, i'm in the midst of writing songs, short poems and learning to code.</p>
             <p>I love music, basketball, short films, and the outdoors.</p>
             <p>Other hobbies include boring people with my love and admiration for Sekoutoure Abodunrin, Olakunle Soriyan, Wole Soyinka, Chimamanda Ngozi Adichie & Stephen Curry.</p>
@@ -36,7 +38,7 @@
         </div>
     
         
-        <div class="mediumArticles mediumArticlesHover" onclick="location.href='https://medium.com/@peteromoyele';">
+        <div class="mediumArticles mediumArticlesHover border" onclick="location.href='https://medium.com/@peteromoyele';">
 
             <div class="image">
                 <a href="https://medium.com/@peteromoyele" target="_blank">
@@ -50,7 +52,7 @@
             
         </div>
 
-        <div class="wordpress wordpressHover" onclick="location.href='https://theolafimihanblog.wordpress.com/';">
+        <div class="wordpress wordpressHover border" onclick="location.href='https://theolafimihanblog.wordpress.com/';">
 
             <div class="image">
                 <a href="https://theolafimihanblog.wordpress.com/" target="_blank">
@@ -65,7 +67,7 @@
             
         </div>
 
-        <div class="github githubHover" onclick="location.href='https://github.com/peter-omoyele';">
+        <div class="github githubHover border" onclick="location.href='https://github.com/peter-omoyele';">
 
             <div class="image">
                 <a href="https://github.com/peter-omoyele" target="_blank">
@@ -80,7 +82,7 @@
             
         </div>
 
-        <div class="atupaStaticLandingPage  atupaStaticLandingPageHover" onclick="location.href='https://atupa-light-toggle.vercel.app/';">
+        <div class="atupaStaticLandingPage  atupaStaticLandingPageHover border" onclick="location.href='https://atupa-light-toggle.vercel.app/';">
 
             <div class="image">
                 <a href="https://atupa-light-toggle.vercel.app/" target="_blank">
@@ -93,6 +95,34 @@
             </div>
             
         </div>
+
+        <div class="oke okeHover border" onclick="location.href='https://theolafimihanblog.wordpress.com/2021/01/18/the-ordeals-of-oke-a-short-story/';">
+
+            <div class="image">
+                <a href="https://theolafimihanblog.wordpress.com/2021/01/18/the-ordeals-of-oke-a-short-story/" target="_blank">
+                    <img src="assets/writing-tool.svg" alt="A pen">
+                </a>
+            </div>
+
+            <div class="text">
+                <p>Tribute to Oke</p>
+            </div>
+            
+        </div>
+
+        <div class="riddle riddleHover border" onclick="location.href='https://theolafimihanblog.wordpress.com/2021/01/01/an-eye-for-an-eye-a-short-story/';">
+
+            <div class="image">
+                <a href="https://theolafimihanblog.wordpress.com/2021/01/01/an-eye-for-an-eye-a-short-story/" target="_blank">
+                    <img src="assets/puzzle.svg" alt="A puzzle">
+                </a>
+            </div>
+
+            <div class="text">
+                <p>Can you solve my riddle?</p>
+            </div>
+            
+        </div>
     </div>
 
     <footer>
@@ -101,6 +131,18 @@
 
     <script>
         //HOVER SCRIPT FOR MOBILE
+
+        //Hover script for fancyLink
+
+        let fancyLink = document.getElementsByClassName("fancyLink"){0};
+
+        fancyLink.addEventListener("touchstart", function(){
+            fancyLink,classList.add("fancyLinkHover")
+        });
+
+        fancyLink.addEventListener("touchend", function(){
+            fancyLink,classList.remove("fancyLinkHover")
+        });
 
         //Hover Script For mediumArticles
 
@@ -148,6 +190,32 @@
         atupaStaticLandingPage.addEventListener("touchend", function(){
             atupaStaticLandingPage.classList.remove("atupaStaticLandingPageHover")
         });
+
+        //Hover Script For oke
+
+        let oke = document.getElementsByClassName("oke"){0};
+
+        oke.addEventListener("touchstart", function(){
+            oke.classList.add("okeHover")
+        });
+
+        oke.addEventListener("touchend", function(){
+            oke.classList.remove("okeHover")
+        });
+
+        //Hover script for riddle
+
+        let riddle = document.getElementsByClassName("riddle")[0];
+
+        riddle.addEventListener("touchstart", function(){
+            riddle.classList.add("riddleHover")
+        });
+
+        riddle.addEventListener("touchend", function(){
+            riddle.classList.remove("riddleHover")
+        });
+
+
 
     </script>
 </body>

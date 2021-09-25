@@ -17,6 +17,7 @@ body {
     align-items: center;
     padding: 5px;
     padding-top: 50px;
+    padding-bottom: 100px;
 }
 .main-container h3 {
     margin-top: 40px;
@@ -38,15 +39,16 @@ section {
     text-decoration: none;
     color: #0e0e0e;
     background-image: linear-gradient(90deg, #005f73, #ee9b00);
-    background-size: 0% 2px;
+    background-size: 0% 1px;
     background-repeat: no-repeat;
     background-position: left bottom;
     transition: 1s ease;
 }
 
 .fancyLink:hover {
-    background-size: 100% 3px;
+    background-size: 100% 1px;
 }
+
 
 @media screen and (min-width: 800px) {
     .main-container {
@@ -80,7 +82,7 @@ div > div {
 }
 
 div p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .social-buttons {
@@ -112,7 +114,9 @@ div p {
 .mediumArticles,
 .wordpress,
 .github,
-.atupaStaticLandingPage {
+.atupaStaticLandingPage,
+.oke,
+.riddle {
     cursor: pointer;
     align-items: center;
     border-bottom-right-radius: 15px;
@@ -120,6 +124,22 @@ div p {
     margin-bottom: 15px;
 }
 
+
+.border > * {
+    border: none;
+}
+
+.border:hover {
+    background-color: #005f73;
+    border-radius: 9px;
+    transition: .5s;
+    padding-block: 3px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+/*
 .mediumArticles:hover {
     background-color: #005f73;
     border-radius: 9px;
@@ -156,28 +176,35 @@ div p {
     border-top-left-radius: 15px;
 }
 
-.mediumArticles > * {
-    border: none;    
+.oke:hover {
+    background-color: #005f73;
+    border-radius: 9px;
+    transition: .5s;
+    padding-block: 2px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
-.wordpress > *  {
-     border: none;
+.riddle:hover {
+    background-color: #005f73;
+    border-radius: 9px;
+    transition: .5s;
+    padding-block: 2px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
+*/
 
-.github > * {
-    border: none;
-}
-
-.atupaStaticLandingPage > * {
-    border: none;
-}
 
 footer {
     text-align: center;
 }
 
-
 /*Hover Styles For Mobile*/
+
+.fancyLinkHover:hover {
+    background-size: 100% 3px;
+}
 
 .atupaStaticLandingPageHover:hover {
     background-color: #005f73;
@@ -197,6 +224,14 @@ footer {
 .githubHover:hover {
     background-color: #005f73;
     transition: .5s;
-    
+}
 
+.okeHover:hover {
+    background-color: #005f73;
+    transition: .5s;
+}
+
+riddleHover:hover {
+    background-color: #005f73;
+    transition: .5s;
 }
