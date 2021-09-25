@@ -23,8 +23,15 @@ body {
     margin-bottom: 5px;
 }
 
-.who {
+section {
+    padding-inline: 40px;
+    text-align: center;
+
+}
+
+.subtext {
     margin-top: 0;
+    padding-bottom: 10px;
 }
 
 @media screen and (min-width: 800px) {
