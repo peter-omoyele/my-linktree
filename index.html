@@ -27,7 +27,7 @@
 
         </div>
         
-        <div class="mediumArticles" onclick="location.href='https://medium.com/@peteromoyele';">
+        <div class="mediumArticles mediumArticlesHover" onclick="location.href='https://medium.com/@peteromoyele';">
 
             <div class="image">
                 <a href="https://medium.com/@peteromoyele" target="_blank">
@@ -41,7 +41,7 @@
             
         </div>
 
-        <div class="wordpress" onclick="location.href='https://theolafimihanblog.wordpress.com/';">
+        <div class="wordpress wordpressHover" onclick="location.href='https://theolafimihanblog.wordpress.com/';">
 
             <div class="image">
                 <a href="https://theolafimihanblog.wordpress.com/" target="_blank">
@@ -56,7 +56,7 @@
             
         </div>
 
-        <div class="github" onclick="location.href='https://github.com/peter-omoyele';">
+        <div class="github githubHover" onclick="location.href='https://github.com/peter-omoyele';">
 
             <div class="image">
                 <a href="https://github.com/peter-omoyele" target="_blank">
@@ -91,15 +91,54 @@
     </footer>
 
     <script>
+        //HOVER SCRIPT FOR MOBILE
+
+        //Hover Script For mediumArticles
+
+        let mediumArticles = documment.getElementsByClassName("mediumArticles")[0];
+
+        mediumArticles.addEventListener("touchstart", function(){
+            mediumArticles.classList.add("mediumArticlesHover")
+        });
+
+        mediumArticles.addEventListener("touchend", function(){
+            mediumArticles.classList.remove("mediumArticlesHover")
+        });
+
+        //Hover script for wordpressHover
+
+        let wordpress = document.getElementsByClassName("wordpress")[0];
+
+        wordpress.addEventListener("touchstart", function(){
+            wordpress.classList.add("wordpressHover")
+        });
+
+        wordpress.addEventListener("touchend", function(){
+            wordpress.classList.remove("wordpressHover")
+        });
+
+        //Hover script for github
+
+        let github = document.getElementsByClassName("github")[0];
+
+        github.addEventListener("touchstart", function(){
+            github.classList.add("githubHover")
+        });
+
+        github.addEventListener("touchend", function(){
+            github.classList.remove("githubHover")
+        });
+
+        //Hover Script For atupaStaticLandingPage
         let atupaStaticLandingPage = document.getElementsByClassName("atupaStaticLandingPage")[0];
 
         atupaStaticLandingPage.addEventListener("touchstart", function(){
             atupaStaticLandingPage.classList.add("atupaStaticLandingPageHover")
-        })
+        });
 
         atupaStaticLandingPage.addEventListener("touchend", function(){
             atupaStaticLandingPage.classList.remove("atupaStaticLandingPageHover")
-        })
+        });
 
     </script>
 </body>

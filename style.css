@@ -163,3 +163,30 @@ footer {
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
 }
+
+.mediumArticlesHover {
+    background-color: #005f73;
+    border-radius: 9px;
+    transition: .5s;
+    padding-block: 2px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.wordpressHover {
+    background-color: #005f73;
+    border-radius: 9px;
+    transition: .5s;
+    padding-block: 2px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.githubHover {
+    background-color: #005f73;
+    border-radius: 9px;
+    transition: .5s;
+    padding-block: 2px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
