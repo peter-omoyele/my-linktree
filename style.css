@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@400;500;600;700&display=swap');
 
 * {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Yaldevi', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -33,7 +33,7 @@
 }
 
 body {
-    background-color: #9b2226;
+    background-color: #E5E5E5;
 }
 
 .main-container {
@@ -47,6 +47,10 @@ body {
 .main-container h3 {
     margin-top: 40px;
     margin-bottom: 5px;
+}
+
+.main-container p {
+    margin-bottom: 20px;
 }
 
 section {
@@ -93,7 +97,7 @@ img {
 }
 
 div > div {
-    border: 2px solid  #0e0e0e;
+    border: 2px solid  #14213D;
     width: 90%;
     margin-bottom: 5px;
     display: flex;
