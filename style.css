@@ -7,19 +7,32 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #E5E5E5;
+    --primary-text-color: #0e0e0e;
+    --secondary-color: #0f3e47;
+}
+
+.dark-theme {
+    --bg-color: #343a40;
+    --primary-text-color: #E5E5E5;
+    
+
+}
+
 ::-webkit-scrollbar {
     width: .7em;
 }
 
 ::-webkit-scrollbar-track {
-    background: #005f73;
+    background: var(--secondary-color);
     border-radius: 100vw;
     margin-block: .2em;
 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #0f3e47;
+    background: var(--secondary-color);
     border-radius: 100vw;
 }
 
@@ -33,7 +46,20 @@
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+}
+
+.toggle {
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-block: 30px;
+}
+
+.dark-mode {
+    width: 30px;
+    cursor: pointer;
 }
 
 .main-container {
@@ -69,8 +95,7 @@ section {
 }
 
 .fancyLink {
-    text-decoration: none;
-    color: #0e0e0e;
+    color: var(--primary-text-color);
     background-image: linear-gradient(90deg, #005f73, #ee9b00);
     background-size: 0% 1px;
     background-repeat: no-repeat;
@@ -80,6 +105,7 @@ section {
 
 .fancyLink:hover {
     background-size: 100% 1px;
+    text-decoration: none;
 }
 
 
@@ -101,7 +127,7 @@ img {
 }
 
 div > div {
-    border: 2px solid  #14213D;
+    border: 2px solid var(--primary-text-color);
     width: 90%;
     margin-bottom: 5px;
     display: flex;
@@ -125,10 +151,6 @@ div p {
 .social-buttons a img {
     margin-right: 20px;
 
-}
-
-.social-buttons a img:hover {
-    height: 40px;
 }
 
 .image {
@@ -159,10 +181,9 @@ div p {
 }
 
 .border:hover {
-    background-color: #005f73;
+    background-color: var(--secondary-color);
     border-radius: 9px;
     transition: .5s;
-    padding-block: 3px;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
 
@@ -236,31 +257,31 @@ footer {
 }
 
 .atupaStaticLandingPageHover:hover {
-    background-color: #005f73;
+    background-color: var(--secondary-color);
     transition: .5s;
 }
 
 .mediumArticlesHover:hover {
-    background-color: #005f73;
+    background-color: var(--secondary-color);
     transition: .5s;
 }
 
 .wordpressHover:hover {
-    background-color: #005f73;
+    background-color: var(--secondary-color);
     transition: .5s;
 }
 
 .githubHover:hover {
-    background-color: #005f73;
+    background-color: var(--secondary-color);
     transition: .5s;
 }
 
 .okeHover:hover {
-    background-color: #005f73;
+    background-color: var(--secondary-color);
     transition: .5s;
 }
 
 riddleHover:hover {
-    background-color: #005f73;
+    background-color: var(--secondary-color);
     transition: .5s;
 }

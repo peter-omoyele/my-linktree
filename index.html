@@ -10,6 +10,10 @@
 
 <body>
     <div class="main-container">
+
+        <div class="toggle">
+            <img class="dark-mode" id="dark-mode" src="assets/moon.svg" alt="">
+        </div>
         
         <section>
             <img class="picture" src="assets/Anomaly-removebg.png" alt="">
@@ -215,8 +219,17 @@
             riddle.classList.remove("riddleHover")
         });
 
+        var darkMode = document.getElementById("dark-mode");
 
+        darkMode.onclick = function(){
+            document.body.classList.toggle("dark-theme");
 
+            if(document.body.classList.contains("dark-theme")){
+                darkMode.src = "assets/sun.svg"
+            } else {
+                darkMode.src = "assets/moon.svg"
+            }
+        }
     </script>
 </body>
 </html>
